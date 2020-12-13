@@ -1,16 +1,18 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@page import="com.myproject.myapp.board.BoardDAO, com.myproject.myapp.board.BoardVO"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
       <!-- basic -->
-      <meta charset="utf-8">
+      <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Eflyer</title>
+      <title>Food it</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -36,7 +38,14 @@
       <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/owl.carousel.min.css">
       <link rel="styleheet" href="${pageContext.request.contextPath}/resources/css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+      .header_section_top{
+      background-color:black;
+      font-size:70;
+      }
+      </style>
    </head>
+   
    <body>
       <!-- banner bg main start -->
       <div class="banner_bg_main">
@@ -47,11 +56,11 @@
                   <div class="col-sm-12">
                      <div class="custom_menu">
                         <ul>
-                           <li><a href="#">Best Sellers</a></li>
-                           <li><a href="#">Gift Ideas</a></li>
-                           <li><a href="#">New Releases</a></li>
-                           <li><a href="#">Today's Deals</a></li>
-                           <li><a href="#">Customer Service</a></li>
+                           <li><a href="#">양덕 </a></li>
+                           <li><a href="#">법원 </a></li>
+                           <li><a href="#">영일대 </a></li>
+                           <li><a href="#">육거리 </a></li>
+                           
                         </ul>
                      </div>
                   </div>
@@ -620,7 +629,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">� 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+            <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
          </div>
       </div>
       <!-- copyright section end -->
