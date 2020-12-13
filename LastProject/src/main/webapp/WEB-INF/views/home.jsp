@@ -48,7 +48,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="home">Home</a></li>
         <li><a href="yangdeok">양덕</a></li>
         <li><a href="beobwon">법원</a></li>
         <li><a href="yongildae">영일대</a></li>

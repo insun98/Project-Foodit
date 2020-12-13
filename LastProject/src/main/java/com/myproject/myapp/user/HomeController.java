@@ -35,5 +35,18 @@ public class HomeController {
 		
 		return "home";
 	}
+	@RequestMapping(value="/yangdeok", method=RequestMethod.GET)
+	public String moveToYangdeok() {
+		return "yangdeok";
+	}
+	@RequestMapping(value="/yongildae", method=RequestMethod.GET)
+	public String moveToYengildae() {
+		return "yangdeok";
+	}
+	@RequestMapping(value="/beobwon", method=RequestMethod.GET)
+	public String moveToBeobWon() {
+		return "yangdeok";
+	}
+	
 	
 }
