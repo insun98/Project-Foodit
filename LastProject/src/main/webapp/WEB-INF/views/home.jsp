@@ -23,7 +23,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="${pageContext.request.contextPath}/resources/images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -103,7 +103,7 @@
                   <div class="main">
                      <!-- Another variation with a button -->
                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search this blog">
+                        <input type="text" class="form-control" placeholder="검색">
                         <div class="input-group-append">
                            <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
                            <i class="fa fa-search"></i>
@@ -112,26 +112,16 @@
                      </div>
                   </div>
                   <div class="header_box">
-                     <div class="lang_box ">
-                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-                        <img src="${pageContext.request.contextPath}/resources/images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu ">
-                           <a href="#" class="dropdown-item">
-                           <img src="${pageContext.request.contextPath}/resources/images/flag-france.png" class="mr-2" alt="flag">
-                           French
-                           </a>
-                        </div>
-                     </div>
+                    
                      <div class="login_menu">
                         <ul>
                            <li><a href="#">
-                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <span class="padding_10">회원가입</span></a>
                            </li>
                            <li><a href="#">
                               <i class="fa fa-user" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
+                              <span class="padding_10">로그인</span></a>
                            </li>
                         </ul>
                      </div>
@@ -148,7 +138,7 @@
                      <div class="carousel-item active">
                         <div class="row">
                            <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
+                              <h1 class="banner_taital">한동인<br>살찌우기 프로젝트</h1>
                               <div class="buynow_bt"><a href="#">Buy Now</a></div>
                            </div>
                         </div>
@@ -157,7 +147,7 @@
                         <div class="row">
                            <div class="col-sm-12">
                               <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                              <div class="buynow_bt"><a href="#">START</a></div>
                            </div>
                         </div>
                      </div>
