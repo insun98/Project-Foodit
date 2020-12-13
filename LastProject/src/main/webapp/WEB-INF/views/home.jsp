@@ -119,7 +119,7 @@
                               <i class="fa fa-user" aria-hidden="true"></i>
                               <span class="padding_10">회원가입</span></a>
                            </li>
-                           <li><a href="#">
+                           <li><a href="login/login">
                               <i class="fa fa-user" aria-hidden="true"></i>
                               <span class="padding_10">로그인</span></a>
                            </li>
