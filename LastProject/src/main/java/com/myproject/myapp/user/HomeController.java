@@ -4,6 +4,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -39,14 +41,46 @@ public class HomeController {
 	public String moveToYangdeok() {
 		return "yangdeok";
 	}
+	@RequestMapping(value="/new", method=RequestMethod.GET)
+	public String moveToHome() {
+		return "home";
+	}
+	@RequestMapping(value="/board/new", method=RequestMethod.GET)
+	public String moveToHome1() {
+		return "home";
+	}
 	@RequestMapping(value="/yongildae", method=RequestMethod.GET)
 	public String moveToYengildae() {
-		return "yangdeok";
+		return "yongildae";
 	}
 	@RequestMapping(value="/beobwon", method=RequestMethod.GET)
 	public String moveToBeobWon() {
-		return "yangdeok";
+		return "beobwon";
 	}
 	
-	
+	@RequestMapping(value="/board/yongildae", method=RequestMethod.GET)
+	public String moveToYengildae2() {
+		return "yongildae";
+	}
+	@RequestMapping(value="/board/beobwon", method=RequestMethod.GET)
+	public String moveToBeobWon2() {
+		return "beobwon";
+	}
+	@RequestMapping(value="/board/yangdeok", method=RequestMethod.GET)
+	public String moveToYangdeok2() {
+		return "yangdeok";
+	}
+	@RequestMapping(value="/login/signup", method=RequestMethod.GET)
+	public String moveToSignin() {
+		return "addform";
+	}
+	@RequestMapping(value="/login/add_ok.jsp", method=RequestMethod.GET)
+	public String moveToSignup() {
+		return "add_ok";
+	}
+	@RequestMapping(value="/board/login/logout")
+	public String logout1(HttpSession session) {
+		session.invalidate();
+		return "redirect:/login/login";
+	}
 }

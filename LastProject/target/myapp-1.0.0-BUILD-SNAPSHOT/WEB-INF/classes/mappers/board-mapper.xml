@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="LastP">
+	<insert id="insertBoard">
+		insert into LastP (category, title, writer, content)
+		values (#{category},#{title},#{writer},#{content})
+	</insert>
+	<update id="updateBoard">
+		update LastP
+		set category=#{category},title=#{title},content=#{content},writer=#{writer} where seq=#{seq}
+	</update>
+	<delete id="deleteBoard">
+		delete from LastP where seq=#{seq}
+	</delete>
+	<select id="getBoard" resultType="board">
+		select * from LastP where seq=#{seq}
+	</select>
+	<select id="getBoardList" resultType="board">
+		select * from LastP order by seq desc
+	</select>
+</mapper>
